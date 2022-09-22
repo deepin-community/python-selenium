@@ -1,0 +1,15 @@
+python-selenium for Debian
+------------------
+
+The upstream source code of selenium was repacked. To check out the source use
+git with the following commands:
+
+    git clone https://github.com/SeleniumHQ/selenium.git
+
+The used python package which includes the source code of selenium and the
+python package information can be found at:
+
+    http://pypi.python.org/pypi/selenium
+
+ -- Sascha Girrulat <sascha@girrulat.de>  Sa, 22 Aug 2015 11:55:23 +0200
+

@@ -1,0 +1,3 @@
+version=3
+opts=repacksuffix=+dfsg1,dversionmangle=s/\+(debian|dfsg|ds|deb)([\.\d]+)?$//,uversionmangle=s/(rc|a|b|c)/~$1/ \
+https://pypi.debian.net/selenium/selenium-(.+)\.(?:zip|tgz|tbz|txz|(?:tar\.(?:gz|bz2|xz)))

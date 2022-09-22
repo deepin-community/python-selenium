@@ -1,0 +1,7 @@
+python-selenium (3.8.0+dfsg1-3) unstable; urgency=medium
+
+  Selenium requires a driver to interface with the chosen browser. Especially
+  Firefox requires the binary geckodriver in addition to the debian package
+  firefoxdriver. Consult README.Debian for more details.
+
+ -- Sascha Girrulat <sascha@girrulat.de>  Sat, 03 Feb 2018 22:54:09 +0100

@@ -1,0 +1,171 @@
+python-selenium (4.0.0~a1+dfsg1-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * No-change source-only upload to allow testing migration.
+
+ -- Boyuan Yang <byang@debian.org>  Tue, 22 Oct 2019 11:12:17 -0400
+
+python-selenium (4.0.0~a1+dfsg1-1) unstable; urgency=medium
+
+  * Remove python2 dependencies (Closes: #938161)
+  * New upstream version 4.0.0~a1+dfsg1
+  * Remove dependencies and patches related to firefoxdriver (Closes: #93939)
+  * Use cromium driver from path environment
+  * Update deminimized js code from upstream
+  * Remove unused lintian overrides
+
+ -- Sascha Girrulat <sascha@girrulat.de>  Tue, 10 Sep 2019 11:25:42 +0200
+
+python-selenium (3.14.1+dfsg1-1) unstable; urgency=medium
+
+  * New upstream version 3.14.1+dfsg1
+  * Bump Standarts-Version to 4.2.1
+  * Add dependency to python[3]-urllib3
+  * Update dependency to the related firefoxdriver
+
+ -- Sascha Girrulat <sascha@girrulat.de>  Tue, 16 Oct 2018 16:13:17 +0200
+
+python-selenium (3.8.0+dfsg1-3) unstable; urgency=medium
+
+  * Shorten NEWS and move the content to README.Debian
+
+ -- Sascha Girrulat <sascha@girrulat.de>  Sat, 03 Feb 2018 23:17:54 +0100
+
+python-selenium (3.8.0+dfsg1-2) unstable; urgency=medium
+
+  * Add newsfile to ease the handling with geckodriver.
+
+ -- Sascha Girrulat <sascha@girrulat.de>  Tue, 12 Dec 2017 09:56:04 +0100
+
+python-selenium (3.8.0+dfsg1-1) unstable; urgency=medium
+
+  * New upstream version 3.8.0+dfsg1 (Closes: #883073)
+  * Use https for debian watch
+  * Update standards version
+  * Rename old style config section
+  * Update exludes to new package structure
+  * Remove minimized javascript files from upstream code
+  * Update patches to reflect upstream changes
+  * Update changelog path to reflect upstream changes
+  * Update package suggestions
+  * Add patch file to readd unminimized javascript code
+
+ -- Sascha Girrulat <sascha@girrulat.de>  Sat, 09 Dec 2017 23:15:28 +0100
+
+python-selenium (2.53.2+dfsg1-2) unstable; urgency=medium
+
+  * Add chromium-driver to recommends (Closes: #855353)
+  * Update chromedriver binary location (Closes: #854732)
+
+ -- Sascha Girrulat <sascha@girrulat.de>  Mon, 20 Feb 2017 11:05:02 +0100
+
+python-selenium (2.53.2+dfsg1-1) unstable; urgency=medium
+
+  * Update suggest of firefoxdriver to version 2.53.2
+
+ -- Sascha Girrulat <sascha@girrulat.de>  Sun, 05 Jun 2016 22:03:13 +0200
+
+python-selenium (2.53.2+dfsg1-0.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Added debian/gbp.conf.
+  * New upstream release (Closes: #816624).
+  * Ran wrap-and-sort -t -a.
+  * Removed useless python build-depends (there's already python-all).
+  * Removed useless X-Python-Version: and X-Python3-Version: fields, as the
+    required versions are already available in oldoldstable.
+  * Removed required version of python-setuptools (already satisfied in
+    oldstable).
+  * Bumped Standards-Version to 3.9.8 (no change).
+  * Added extend-diff-ignore = "^[^/]*[.]egg-info/" in d/source/options.
+  * Removed useless/harmful patch:
+    - 0001-add-missing-files-to-SOURCES.txt.patch
+    - 0003-Remove-superfluous-pbr-config.patch
+    - 0004-changelog-naming.patch
+  * Refreshed / rebased patches:
+    - 0002-Set-xpi-path-to-usr-lib.patch
+    - 0005-Use-x_ignore_nofocus-from-usr-lib-firefoxdriver.patch
+  * Fixed README -> README.rst in debian/docs to follow what was done upstream.
+  * Fixed debian/compat to 9 (which also didn't match debhelper version in
+    Build-Depends).
+  * Correctly install upstream changelog using dh_installchangelogs.
+  * Do not attempt to package inexistant docs/* folder.
+  * Now using HTTPS for VCS URLs.
+  * Move chromedriver from Suggests to Recommends, and also makes phantomjs as
+    an option, ie: chromedriver | phantomjs (Closes: #805732).
+  * Add patch to fix chromedriver's location, thanks to Guido Günther for the
+    patch (Closes: #805733).
+
+ -- Thomas Goirand <zigo@debian.org>  Wed, 01 Jun 2016 10:16:42 +0200
+
+python-selenium (2.48.0+dfsg1-2) unstable; urgency=medium
+
+  * Lintian fixes:
+    changelog should not mention-nmu
+    capitalization error in description
+    duplicate short description
+    build depends on python-dev with no arch any
+
+ -- Sascha Girrulat <sascha@girrulat.de>  Mon, 16 Nov 2015 21:45:27 +0100
+
+python-selenium (2.48.0+dfsg1-1) unstable; urgency=medium
+
+  * Imported Upstream version 2.48.0+dfsg1
+
+ -- Sascha Girrulat <sascha@girrulat.de>  Thu, 05 Nov 2015 10:33:36 +0100
+
+python-selenium (2.48.0-1) unstable; urgency=medium
+
+  * Imported Upstream version 2.48.0
+  * Use shared libs from /usr/lib/firefoxdriver
+
+ -- Sascha Girrulat <sascha@girrulat.de>  Sun, 01 Nov 2015 00:33:18 +0100
+
+python-selenium (2.47.1+dfsg1-2) unstable; urgency=medium
+
+  * remove superfluous shlibs:Depends from depends
+  * Add versioned suggest dependency to firefoxwebdriver
+  * Update patches from gbp-pq
+
+ -- Sascha Girrulat <sascha@girrulat.de>  Sat, 31 Oct 2015 21:19:01 +0100
+
+python-selenium (2.47.1+dfsg1-1) experimental; urgency=medium
+
+  [ Leo Arias ]
+  * Added python3-setuptools as a dependency.
+
+  [ Thomi Richards ]
+  * Build python3 packages as well.
+
+  [ Federico Gimenez ]
+  * initial patch to move the package to main
+
+  [Sascha Girrulat]
+  * Import parts from a patch of Federico Gimenez <fgimenez@canonical.com>
+  * Add get-orig-source target to debian/rules
+    (Closes: #636677, #729269, #796319)
+  * debian/control cleanups 
+  * Imported Upstream version 2.47.1+dfsg1
+    (Closes: #705460, #659112, #760789 )
+  * split off source patches from external patches
+  * suggest chromdriver as one of the useable webdriver backends
+    (Closes: #700061)
+  * Remove x_ignore_nofocus.so
+
+  [ Sascha Girrulat ]
+  * Snapshot release 2.47.1+dfsg1-1~1.gbp824c36
+  * switch source url from google svn to github
+  * fix dversionmangle in debian/watch to compare the dfsg version
+  * remove non-free from section (Closes: #770232)
+  * use project homepage instead of pypi source page
+  * add suggest to firefoxdriver
+  * import parts of a patch from Federico Gimenez
+
+ -- Sascha Girrulat <sascha@girrulat.de>  Mon, 24 Aug 2015 15:45:01 +0200
+
+python-selenium (2.2.0-1) unstable; urgency=low
+
+  * source package automatically created by stdeb 0.6.0+git
+  * [120bd06] debianized (Closes: #626535)
+
+ -- Sascha Girrulat <sascha@girrulat.de>  Sat, 30 Jul 2011 20:42:23 +0200

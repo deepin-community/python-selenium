@@ -1,0 +1,18 @@
+python-selenium for Debian
+--------------------------
+
+  Selenium requires a driver to interface with the chosen browser. Especially
+  Firefox requires geckodriver in addition to the debian package firefoxdriver.
+
+  Geckodriver can be found at:
+  <https://github.com/mozilla/geckodriver/releases>`. Make sure it's in your
+  `PATH`, e. g., place it in `/usr/local/bin`.
+
+  Not having geckodriver will result in the error
+  `selenium.common.exceptions.WebDriverException: Message: 'geckodriver'
+  executable needs to be in PATH.`
+
+  For Chromium and Phantomjs no additionall download is required. Just install
+  the chromium-driver or phantomjs package.
+
+ -- Sascha Girrulat <sascha@girrulat.de>  Sat, 3 Feb 2018 22:54:09 +0100
